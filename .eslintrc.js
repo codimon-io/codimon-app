@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     browser: true,
   },
-
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
@@ -20,7 +20,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 
     // Best Practices
-    eqeqeq: 'error',
     'no-invalid-this': 'error',
     'no-return-assign': 'error',
     'no-unused-expressions': ['error', { allowTernary: true }],
